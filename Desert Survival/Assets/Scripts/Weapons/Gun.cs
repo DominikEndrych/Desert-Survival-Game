@@ -5,7 +5,7 @@ using UnityEngine;
 public class Gun : Weapon
 {
     //[SerializeField] ammoType type;
-    
+
 
     //private AudioSource audioSource;
     //private PlayerEquipment equipment;
@@ -23,6 +23,8 @@ public class Gun : Weapon
         Unequip();
     }
     */
+
+    [SerializeField] ParticleSystem muzzleFlash;
 
     protected override void Attack()
     {
@@ -56,6 +58,7 @@ public class Gun : Weapon
             */
 
             RaycastAttack();
+            muzzleFlash.Play();                                     //pla muzzle flash effect
 
             equipment.DecreaseAmmo(type);                           //decrease ammo
             ChangeAmmoText();
