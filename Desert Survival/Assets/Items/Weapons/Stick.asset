@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b34cf44e4cc2e347b24e6244f979553, type: 3}
+  m_Name: Stick
+  m_EditorClassIdentifier: 
+  itemName: Weird stick
+  description: This is a long stick
+  icon: {fileID: 21300000, guid: 6c7705bbb5fd4c541b4bc7d8ff021ef4, type: 3}
+  prefab: {fileID: 7570009967916342028, guid: 47f91737c421ef3478d4960924cb55e2, type: 3}
+  equipModel: {fileID: 2565606510769650575, guid: 8770dcbb6e5bf14419586f5253a5e757,
+    type: 3}
+  range: 0

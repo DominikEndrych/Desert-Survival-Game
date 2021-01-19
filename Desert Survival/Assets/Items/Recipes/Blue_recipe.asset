@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36b9fb8bfef5d5a488fd5c8e1f57adc1, type: 3}
+  m_Name: Blue_recipe
+  m_EditorClassIdentifier: 
+  result: {fileID: 11400000, guid: b98c1e2635b4cdf4d8773379a982c266, type: 2}
+  resultAmount: 1
+  items:
+  - {fileID: 11400000, guid: 8f8fedf21200c5d49a819b5478ea52f0, type: 2}
+  - {fileID: 11400000, guid: f5d8832c418cf9c4ba4f13ad74fd1671, type: 2}
