@@ -8,6 +8,6 @@ public class WeatherPreset : ScriptableObject
     public string name;
 
     public LightingPreset lightingPreset;
-    public Transform weatherVfx;
+    public ParticleSystem weatherVfx;
     public Sound ambientSound;
 }

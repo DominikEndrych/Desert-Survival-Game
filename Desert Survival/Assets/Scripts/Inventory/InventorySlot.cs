@@ -35,7 +35,8 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
         }
 
         informationPanel.ChangeContent();
-        this.ReloadStackNumber();
+        //this.ReloadStackNumber();
+        ReloadStackNumber();
         OnItemChange();
     }
 
@@ -99,7 +100,7 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
 
     public void OnCursorEnter()
     {
-
+        Debug.Log("hello");
         if (isOccupied)
         {
             informationPanel.gameObject.SetActive(true);

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Rain
   lightingPreset: {fileID: 11400000, guid: e9398ae5f01ab714293e11b2329d83e9, type: 2}
-  weatherVfx: {fileID: 5102072127792079126, guid: 799307b338c210249b9c3bc474d0ce10,
+  weatherVfx: {fileID: 5102072127792079127, guid: 799307b338c210249b9c3bc474d0ce10,
     type: 3}
   ambientSound:
     name: Rain
