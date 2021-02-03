@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Water Bottle
   description: Small bottle with water
   icon: {fileID: 21300000, guid: 38e48f57b62d28c448d9feefb1bd5edb, type: 3}
-  prefab: {fileID: 7480126961813795726, guid: 5a6f9bfcd10656f4eb33b54b7713f1e9, type: 3}
-  water: 2
+  prefab: {fileID: 4308226554739462586, guid: 4dcf974143f3b5e4a969de6fd772dad9, type: 3}
+  water: 4
   food: 0
   health: 0

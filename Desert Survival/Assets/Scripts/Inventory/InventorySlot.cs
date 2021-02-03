@@ -100,7 +100,6 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
 
     public void OnCursorEnter()
     {
-        Debug.Log("hello");
         if (isOccupied)
         {
             informationPanel.gameObject.SetActive(true);

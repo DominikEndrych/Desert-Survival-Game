@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4869a22b7242d4e4c95955d18fab5ac3, type: 3}
+  m_Name: PotatoChips
+  m_EditorClassIdentifier: 
+  itemName: Potato Chips
+  description: Bag of potato chips
+  icon: {fileID: 21300026, guid: 37607ec1aab56e349af84a980f685a4b, type: 3}
+  prefab: {fileID: 641458797024700621, guid: 78e10ec6c1bbc064f9f8f77b5cb0871b, type: 3}
+  water: -0.5
+  food: 4
+  health: 0

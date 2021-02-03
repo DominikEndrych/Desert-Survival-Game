@@ -44,7 +44,6 @@ public class WeatherController : MonoBehaviour
             GameObject vfx = GameObject.Instantiate(preset.weatherVfx).gameObject;
             vfx.transform.parent = weatherVfxParent;
             vfx.transform.localPosition = new Vector3(0, preset.weatherVfx.transform.position.y, 0);
-            Debug.Log(vfx.transform.position);
         }
         if(preset.ambientSound.clip != null)
         {
