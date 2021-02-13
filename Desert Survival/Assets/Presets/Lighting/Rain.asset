@@ -15,9 +15,9 @@ MonoBehaviour:
   AmbientColor:
     serializedVersion: 2
     key0: {r: 0.13725491, g: 0.13725491, b: 0.13725491, a: 1}
-    key1: {r: 0.07058824, g: 0.07058824, b: 0.078431375, a: 1}
-    key2: {r: 0.03773582, g: 0.03773582, b: 0.11764706, a: 0}
-    key3: {r: 0.0754717, g: 0.0754717, b: 0.078431375, a: 0}
+    key1: {r: 0.16470589, g: 0.16470589, b: 0.34901962, a: 1}
+    key2: {r: 0.091847636, g: 0.091847636, b: 0.4528302, a: 0}
+    key3: {r: 0.16300283, g: 0.16300283, b: 0.3490566, a: 0}
     key4: {r: 0.13725491, g: 0.13725491, b: 0.13725491, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
@@ -99,4 +99,8 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  SkyboxMaterial: {fileID: 2100000, guid: b7b707e037885d74c829ba8a2f4f473c, type: 2}
+  sunSize: 0.004
+  sunSizeConvergence: 1
+  atmosphereThickness: 0.75
+  skyTint: {r: 0.24906546, g: 0.26541173, b: 0.27358484, a: 1}
+  exposure: 0.3

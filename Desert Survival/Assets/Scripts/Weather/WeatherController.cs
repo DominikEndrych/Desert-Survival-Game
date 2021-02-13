@@ -12,10 +12,16 @@ public class WeatherController : MonoBehaviour
     [SerializeField] Transform weatherVfxParent;
 
     private LightingController lightingController;
+    private float lerpStep = 0.007f;
     public void Start()
     {
         lightingController = gameObject.GetComponent<LightingController>();
         StartCoroutine(WeatherRoutine());
+    }
+
+    public void Update()
+    {
+        UpdateSkybox(currentWeather.lightingPreset);
     }
 
     IEnumerator WeatherRoutine()
@@ -39,18 +45,33 @@ public class WeatherController : MonoBehaviour
         lightingController.Preset = preset.lightingPreset;
         currentWeather = preset;
         
+        //change weather VFX
         if(preset.weatherVfx != null)
         {
             GameObject vfx = GameObject.Instantiate(preset.weatherVfx).gameObject;
             vfx.transform.parent = weatherVfxParent;
             vfx.transform.localPosition = new Vector3(0, preset.weatherVfx.transform.position.y, 0);
         }
+
+        //change ambient sound
         if(preset.ambientSound.clip != null)
         {
             AudioManager.instance.PlayFadeIn(preset.ambientSound);
         }
 
         Debug.Log("Weather Changed");
+    }
+
+    private void UpdateSkybox(LightingPreset preset)
+    {
+        //lerp skybox properties
+        RenderSettings.skybox.SetColor("_SkyTint", Color.Lerp(RenderSettings.skybox.GetColor("_SkyTint"), preset.skyTint, lerpStep));
+        RenderSettings.skybox.SetFloat("_SunSize", Mathf.Lerp(RenderSettings.skybox.GetFloat("_SunSize"), preset.sunSize, lerpStep));
+        RenderSettings.skybox.SetFloat("_SunSizeConvergence", Mathf.Lerp(RenderSettings.skybox.GetFloat("_SunSizeConvergence"), preset.sunSizeConvergence, lerpStep));
+        RenderSettings.skybox.SetFloat("_AtmosphereThickness", Mathf.Lerp(RenderSettings.skybox.GetFloat("_AtmosphereThickness"), preset.atmosphereThickness, lerpStep));
+        RenderSettings.skybox.SetFloat("_Exposure", Mathf.Lerp(RenderSettings.skybox.GetFloat("_Exposure"), preset.exposure, lerpStep));
+
+
     }
 
     private WeatherPreset GetRandomWeather()

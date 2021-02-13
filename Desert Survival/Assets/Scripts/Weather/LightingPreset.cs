@@ -10,5 +10,11 @@ public class LightingPreset : ScriptableObject
     public Gradient DirectionalColor;
     public Gradient FogColor;
 
-    public Material SkyboxMaterial;
+    //public Material SkyboxMaterial;
+    [Header("Skybox")]
+    [Range(0,1)] public float sunSize;
+    [Range(0,10)] public float sunSizeConvergence;
+    [Range(0, 5)] public float atmosphereThickness;
+    public Color skyTint;
+    [Range(0,8)] public float exposure;
 }
