@@ -31,7 +31,7 @@ public class PlayerLookController : MonoBehaviour
 
     private void Update()
     {
-        if (Inventory.instance.isOpen || ReadingPanel.instance.isOpen)
+        if (Inventory.instance.isOpen || ReadingPanel.instance.isOpen || PauseMenu.GamePaused)
         {
             LockCursor(false);
         }

@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Reading Panel
   - Ammo Panel
+  - Ground
   layers:
   - Default
   - TransparentFX
